@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f3fafd;
+}
+
+header{
+    width: 100%;
+    background-color: #fda605;
+    
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.navbar {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+.nature-logo{
+    display: inline-block;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+.menu {
+    list-style: none;
+    width: 25rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 40px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    transition: all 0.3s, border-bottom 0.3s;
+    
+}
+
+.menu a:hover {
+    color: #302f2d; 
+    border-bottom: 2px solid #302f2d;
+}
+.scrolled a:hover {
+    color: #ffd700; 
+    border-bottom: 2px solid #ffd700;
+    
+}
+
+.scrolled {
+    transition: all 200ms ;
+    background-color: #4fc067;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.432);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:30px;
+    padding-top:25px;
+}
+.sidebar li{
+    padding-left: 20px;
+    width: 100%;
+}
+.sidebar a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+.home-section{
+   
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: 150px;
+    z-index: 500;
+}
+.home-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+   
+}
+.home-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.left-part{
+    color: rgb(255, 145, 0);
+    font-size: 3rem;
+   line-height: 1.1;
+   display: inline-block;
+   text-transform: uppercase;
+}
+.left-part span{
+    color: rgb(255, 81, 0);
+    font-size:3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.left-part-para{
+    /* width: 35%; */
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #283533;
+}
+.btn{
+    width: fit-content;
+    margin-top: 20px;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 10px;
+    background-color:rgb(255, 81, 0);
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgb(255, 136, 0);
+}
+.btn:hover{
+    background-color: rgb(255, 81, 0);
+    color: black;
+    transition: all 200ms;
+}
+.right-part{
+    /* position: absolute; */
+    height: 20rem;
+    width: 25rem;
+    right: 100px;
+    bottom:0;
+    scale: 1.5;
+
+}
+.about-section{
+    padding-top: 150px;
+    margin-top: 100px;
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+
+}
+.about-heading{
+    color: #222;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.mountain{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.about-mountain{
+   font-weight: bold;
+   color: #283533;
+}
+.forest{
+    margin-top:100px ;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.about-forest{
+   font-weight: bold;
+   color: #283533;
+}
+.waterfall{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.waterfall img{
+    scale: 1.5;
+}
+.about-waterfall{
+    width: 400px;
+   font-weight: bold;
+   color: #283533;
+}
+
+.services-section{
+    
+    padding-top: 150px;
+    margin-top: 100px;
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.service-para{
+    font-size:1.2rem ;
+    font-weight: bold;
+    color: #283533;
+}
+.service-illustration{
+   justify-items: center;
+}
+
+.contact-container{
+    background-color: #f3fafd;
+    position: relative;
+    
+}
+.contact-content{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact-heading{
+    color: #222;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-self: center;
+    align-self: center;
+}
+.contact-form{
+    margin-top: 2rem;
+    
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.contact-form label{
+    font-size:25px ;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #222;
+}
+.contact-form input{
+   border-radius: 5px;
+   border: 1px solid black;
+}
+.contact-form .input-email{
+    padding: 0.5rem
+}
+.contact-form .input-message{
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.send-btn{
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 10px;
+    background-color:rgb(255, 81, 0);
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgb(255, 136, 0);
+    align-self: center;
+    justify-self: center;
+
+}
+.send-btn:hover{
+   color: #222;
+   transition: all 200ms;
+}
+@media (max-width: 800px) {
+   .menu{
+    display: none;
+   }
+   .hideonmobile{
+    display: none;
+}
+  .threeline{
+  display: block; 
+ }
+   .home-container{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
+   }
+
+  }
+  @media (max-width:860px) {
+  
+   
+    .mountain{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+       }
+       .forest{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+       }
+       .waterfall{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+       }
+       .about-waterfall{
+         width: 100%;
+       }
+       .service-illustration{
+        scale: 0.8;
+       }
+       .contact-form .input-email{
+        padding: 0;
+       } 
+  }
+  @media (max-width:650px) {
+    .img-of-about-section{
+        scale: 0.7;
+    }
+  }
